@@ -1,0 +1,23 @@
+%<*prop1>
+\hlinear
+\textbf{Proposição 1: }Sejam $d$, $d'$ e $d''$ métricas de $\bRn$ definidas como a pouco. Para cada $x, y
+\in \bRn$, temos que:
+\begin{ceqnalign*}
+  d''(x, y)\lec{(1)} d(x,y)\lec{(2)} d'(x,y) \lec{(3)} n\cdot d''(x,y),
+\end{ceqnalign*}
+onde $n \inN$.
+\dotline
+\textbf{Dem: } Vejamos a desigualdade (1). Seja $j \inN_{\le n}$ tal que $|x_j - y_j| = d''(x,y)$, então,
+\vspace{2mm}
+\begin{ceqnalign*}
+  |x_j - y_j| = \sqrt{(x_j - y_j)^2} \le \sqrt{(x_j - y_j)^2 + C},
+\end{ceqnalign*}
+onde $C \in \bR_{\ge 0}$. Note que, para $A = \bN_{\le n} \setminus\{j\}$, temos que $
+d_j(x,y)=\sqrt{\sum\limits_{i \in A} |x_i - y_i|} \ge 0$, visto que $d_j$ é na verdade a métrica $d$ aplica
+da a pontos em $\bR^{n-1}$. Deste modo, seja $c = d_j^2(x,y)$. Com isto,
+\begin{ceqnalign*}
+  d''(x,y) = |x_j - y_j| \le \sqrt{(x_j - y_j)^2 + d_j^2(x,y)} = \sqrt{d^2(x,y)} = d(x,y),
+\end{ceqnalign*}
+como queríamos.
+\hlinear
+%</prop1>
