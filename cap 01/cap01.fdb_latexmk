@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber utfpr-article"] 1741235248.12115 "utfpr-article.bcf" "utfpr-article.bbl" "utfpr-article" 1741360084.67147 0
-  "utfpr-article.bcf" 1741360084.47396 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
+["biber cap01"] 1742257264.19959 "cap01.bcf" "cap01.bbl" "cap01" 1742554639.76866 0
+  "cap01.bcf" 1742554639.47132 112319 67d085eaaaf2ed67f25246414e8e0e7c "pdflatex"
   (generated)
-  "utfpr-article.bbl"
-  "utfpr-article.blg"
+  "cap01.bbl"
+  "cap01.blg"
   (rewritten before read)
-["pdflatex"] 1741360082.5415 "utfpr-article.tex" "utfpr-article.pdf" "utfpr-article" 1741360084.67172 0
+["pdflatex"] 1742554636.47038 "cap01.tex" "cap01.pdf" "cap01" 1742554639.76912 0
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc" 1622837620 2905 1556c73dc99638e0dfff2f132c244f30 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc" 1422827479 2083 60e36f8eac802fcaf19eabe2633b406e ""
@@ -240,18 +240,18 @@
   "Logos//cc-by.png" 1739230991.40235 12588 04d377d968557a6092bccb1617db5a65 ""
   "Logos//utfpr.png" 1739230991.40235 95575 831bea430e497d2d908ff4bd1cdbbf8c ""
   "Section/sol.tex" 1741306650.93053 1886 320b54516b7133c606d76c6836043908 ""
-  "myComm.tex" 1741359882.72514 1872 6ce9540be86407f9038d03d4b3e67e6b ""
-  "utfpr-article.aux" 1741360084.42096 1597 13a786f39862887fd19bd9200cc2980c "pdflatex"
-  "utfpr-article.bbl" 1741235248.85516 466 ee04f40f768daeed26442158e95aba61 "biber utfpr-article"
-  "utfpr-article.out" 1741360084.47096 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
-  "utfpr-article.run.xml" 1741360084.47596 2575 ecdb380e2e083d285790fc33490bfbc4 "pdflatex"
+  "cap01.aux" 1742554639.38357 1597 ba3e01a97d636afa6b6573f252bb3e52 "pdflatex"
+  "cap01.bbl" 1742257264.76736 466 ee04f40f768daeed26442158e95aba61 "biber cap01"
+  "cap01.out" 1742554639.46482 133 782cab8c308fc766984b2f71c6b0542b "pdflatex"
+  "cap01.run.xml" 1742554639.47349 2519 ce0d89449c9066a0c7fae0f9964811bb "pdflatex"
+  "cap01.tex" 1742554636.17149 9848 bc2057a6d37af67574a7a31080b25df4 ""
+  "myComm.tex" 1742257877.8448 1998 12f60485fa5b805fec9ef5b606e328f7 ""
   "utfpr-article.sty" 1741234881.26158 57480 4b5056a4f7011c584cf4f8b858fb4d32 ""
-  "utfpr-article.tex" 1741360081.40291 7312 cfce1f0fe550fb5339b7d0e959d7e16a ""
   (generated)
-  "utfpr-article.aux"
-  "utfpr-article.bcf"
-  "utfpr-article.log"
-  "utfpr-article.out"
-  "utfpr-article.pdf"
-  "utfpr-article.run.xml"
+  "cap01.aux"
+  "cap01.bcf"
+  "cap01.log"
+  "cap01.out"
+  "cap01.pdf"
+  "cap01.run.xml"
   (rewritten before read)

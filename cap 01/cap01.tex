@@ -1,0 +1,195 @@
+
+
+%% Classe de documento
+\documentclass[%% Opções (^ = padrão; > = para pacotes):
+  a4paper,%% Tamanho de papel: a4paper, letterpaper (^), etc.
+  12pt,%% Tamanho de fonte: 10pt (^), 11pt, 12pt, etc.
+  fleqn,%% Alinhamento de equações à esquerda (centralizado por padrão)
+%   draft,%% Aparência de documento (>): draft ou final (^)
+  english,%% Idioma secundário (penúltimo) (>)
+  brazilian,%% Idioma primário (último) (>)
+]{article}
+
+%% Pacotes utilizados
+\usepackage[%% Opções (^ = padrão; ¹ = Leiaute A; ² = Leiaute B):
+%   Layout    = A,%% Leiaute (margens): A (esquerda menor + recuo) ou B (iguais) (^)
+%   Font      = Calibri,%% Fonte principal: Arial (²), Calibri (¹), Times ou LaTeX
+%   RuleWidth = Text,%% Largura de linha (cabeçalho e rodapé): Zero (²), Text ou Paper (¹)
+%   AffilIcon = Off,%% Ícones de e-mail, Lattes, ORCID e Instituição: On (^) ou Off
+%   DocLic    = None,%% Licença do documento: CC (Creative Commons) (^) ou None
+%   CCLic     = BY-NC-ND,%% Licença CC: BY (^), BY-SA, BY-ND, BY-NC, BY-NC-SA ou BY-NC-ND
+%   Link      = TextColor,%% Cor de hyperlinks: DarkBlue (^) ou TextColor
+%   PageNum   = Off,%% Numeração de páginas: On (^) ou Off
+%   SectNum   = Off,%% Numeração de seções (\section): On (²) ou Off (¹)
+%   SectUnnum = Center,%% Alinhamento de seções (\section*): Center (¹) ou Left (²)
+%   Caption   = Left,%% Alinhamento de legendas: Center (^) ou Left
+%   Source    = Left,%% Alinhamento de fonte (referência): Center (^) ou Left
+%   ABNTCit   = NSB,%% Citação ABNT: AAY (NOME, ANO) (^), NRB (1) ou NSB [1]
+%   BibDOI    = Icon,%% Ícone de DOI em referências: Icon ou Name (^)
+%   BibURL    = Icon,%% Ícone de URL em referências: Icon ou URL (^)
+]{utfpr-article}
+
+\include{myComm.tex}
+%%%% Autor(es) (de 1 a 8, Leiaute A; de 1 a 16, Leiaute B): {Número}; {Dados}
+ \Author{1}{%% Bolsista ou voluntário(a) principal (primeiro)
+   Name        = {Fabio Zhao Yuan Wang},%
+   Email       = {fabioyuan@gmail.com},%
+ }
+% \Author{2}{%% Colaborador(a) (segundo ao penúltimo)
+%   Name        = {Nome Completo do{(a)} Autor{(a)}-A2},%
+%   Email       = {author2@domain},%
+%   Lattes      = {0000000000000002},%% Opcional
+%   ORCID       = {0000-0000-0000-0002},%% Opcional (CHKTEX 8)
+%   Affiliation = {Instituição (Nome por Extenso), Cidade, Estado, País},%
+%   Role        = {Discente de Nome do Curso},%% Leiaute B
+% }
+% \Author{3}{%% Orientador(a) principal (último)
+%   Name        = {Nome Completo do{(a)} Autor{(a)}-A3},%
+%   Email       = {author3@domain},%
+%   Lattes      = {0000000000000003},%% Opcional
+%   ORCID       = {0000-0000-0000-0003},%% Opcional (CHKTEX 8)
+%   Affiliation = {\UTFPRName, Cidade, Paraná, Brasil},%
+%   Role        = {Docente do Nome do Departamento ou Programa},%% Leiaute B
+% }
+%%%% Digital Object Identifier (DOI): {Name}
+% \DOIName{10.1000/xyz123}
+%%%% Datas: [Ano] (atual por padrão; opcional); {Recebido}; {Aprovado}
+% \Dates[2023]{DD mmm. \YearNum}{DD mmm. \YearNum}
+%%%% Evento (SEI, SICITE, etc.): {Dados}
+% \EventInfo{%
+%   Name    = {Nome Completo do Evento},%
+%   Acronym = {EVNT \YearNum},%
+%   Date    = {DD a DD de Mmmmmm de \YearNum},%
+%   Local   = {Cidade, Paraná, Brasil},%
+%   Logo    = {example-image},%% Arquivo de imagem em ./Logos/
+%   Header  = {example-image},%% Arquivo de imagem em ./Headers/
+%   URL     = {https://www.example.com/},%
+% }
+%%%% Instituição (se nenhum evento): {Dados}
+ \InstitutionInfo{%
+   Campus     = {Curitiba},%
+   Department = {Departamento de Eletrônica},%
+ }
+
+
+%% Arquivo(s) de referências
+\addbibresource{utfpr-article.bib}
+
+%% Início do documento
+\begin{document}
+Considere o espaço euclidiano $\bRn$. Os pontos de $\bRn$ são listas $x=(x_1, \cdots, x_n)$ onde $x_i \in\bR$
+para todo $i \inN_{\le n}$. Há três maneiras de definir distância entre dois pontos em $\bRn$. Dados 
+$x=(x_1, \cdots, x_n)$ e $y=(y_1, \cdots, y_n)$, 
+
+\begin{ceqnalign*}
+  &d(x,y) = \parth{\sum_{i=1}^{n} (x_i - y_i)^2}^{\frac{1}{2}},
+  &d'(x,y) = \sum_{i=1}^{n} |x_i - y_i|,
+  &&d''(x,y) = \max_{i\inN_{\le n}}|x_i - y_i|.
+\end{ceqnalign*}
+\ExecuteMetaData[Section/sol.tex]{prop1}
+Daqui, vejamos outros exemplos de espaços métricos.\\
+\textbf{Exemplo 1:} Seja $X$ um conjunto arbitrário. Uma função real $f: X \rightarrow \bR$ chama-se
+\textit{limitada} quando existe uma constante $k > 0$ tal que $|f(x)| \le k$ para todo $x \in X$. 
+Note que a soma e o produto de funções limitadas são também limitadas. Denotando 
+o conjunto das funções limitadas que vão de $X$ a $\bR$ como $\mathcal B (X; \bR)
+$, é possível definirmos uma métrica em $\mathcal B (X; \bR)$ tal que, para $f, g 
+\in \mathcal B (X; \bR)$,
+\begin{ceqnalign*}
+  d(f, g) = \sup_{x \in X} |f(x) - g(x)|. \tag{m1}
+\end{ceqnalign*}
+Esta é a chamada \textit{métrica da convergência uniforme}, ou \textit{métrica do sup}.
+
+Note que, para $X = \bN_{\le n}$ e $f, g: X \rightarrow \bR$ limitadas, é possível construir as sequências
+$\seq x k {\bN_{\le n}}$ e $\seq y k {\bN_{\le n}}$, tais que para todo $k \in \bN_{\le n}$, 
+temos que $x_k = f(k)$ e $y_k = g(k)$. Deste modo, se temos $x, y \in \bRn$ tais que a $i$-ésima coordenada
+de $x$ equivale a $x_i$, e análogamente para $y$, tem-se que (m1) pode ser reduzida a métrica $d''$ de $\bRn$.\\
+\textbf{Exemplo 2: } \textit{(Espaços vetoriais normados)} Considere um espaço vetorial $E$ sobre o corpo $\bR$.
+Uma \textit{norma} em $E$ é uma função $|\quad|: E \rightarrow \bR$, que a cada vetor $x \in E$ é associado
+o número real $|x|$, denominado \textit{norma de x}, de modo a serem cumpridas as seguintes condições 
+para cada $u, v \in E$ e $\lambda \in \bR$:
+\begin{enumerate}[label=N\arabic*)]
+  \item Se $x \neq 0_{E}$, então $|x| \neq 0_{\bR}$;
+  \item $|\lambda \cdot x| = |\lambda| |x|$;
+  \item $|x+y| \le |x| + |y|$.
+\end{enumerate}
+
+Um \textit{espaço vetorial normado} é um par $(E, $\nrm$)$ onde $E$ é um espaço vetorial sobre o corpo 
+dos reais e $\nrm$ é uma \textit{norma} em $E$. Exemplos de espaços vetoriais normados são 
+$(\bRn, \nrm)$, $(\bRn, \nrm')$ e $(\bRn, \nrm'')$, onde, para 
+$x=(x_1, \cdots, x_n) \in \bRn$, se tem
+
+\begin{ceqnalign*}
+  |x|=d(x, 0_{\bRn}), \quad |x|' = d'(x, 0_{\bRn}), \quad |x|'' = d''(x, 0_{\bRn})
+\end{ceqnalign*}
+
+Outro exemplo de espaço vetorial normado é $\mathcal B (X, \bR)$, onde $||f|| = \sup_{x \in X} |f(x)|$. Note
+que foi utilizado a notação $||f||$ para denotar a norma da função $f$, a fim de não confundir com a função
+$|f|: X \rightarrow \bR$, tal que $|f|(x) = |f(x)|$, a qual chamamos de '\textit{função módulo de $f$}'.
+
+Todo espaço vetorial normado $(E, \nrm)$ torna-se um espaço métrico por meio da definição $d(x,y) = |x - y|$.
+Esta métrica diz-se \textit{proveniente da norma} $\nrm$. Por exemplo, as métricas $d$, $d'$ e $d''$ em
+$\bRn$ são provenientes das normas $\nrm$, $\nrm'$ e $\nrm''$, respectivamente. Também, a métrica do
+sup em $\cB(X;\bR)$ é proveniente da norma que acabamos de introduzir neste espaço. Podemos então escrever 
+$||f-g||$ em vez de $d(f,g)$.
+
+Note que as propriedades de uma métrica que provém de uma norma resultam imediatamente das análogas para a 
+norma. Por exemplo, a desigualdade triangular é obtida através de (N3).
+
+\textbf{Exemplo 3:} \textit{(Espaços vetoriais com produto interno)} Seja $E$ um espaço vetorial real. Um 
+\textit{proudto interno} em $E$ é uma função $\fintpr: E \times E \rightarrow \bR$, que associa a cada 
+par ordenado de vetores $x, y \in E$ um número real $\intpr{x, y}$ chamado o produto interno de $x$ por $y$,
+de modo a serem cumpridas as condições abaixo, para $x, x', y \in E$ e $\lambda \in \bR$, temos: 
+
+\begin{enumerate}[label=P\arabic*)]
+  \item $\intpr{x+x', y} = \intpr{x,y} + \intpr{x',y}; $
+  \item $\intpr{\lambda x, y} = \lambda \intpr{x, y}; $
+  \item $\intpr{x, y}=\intpr{y,x}; $
+  \item $x\neq 0 \implies \intpr{x,x}>0. $
+\end{enumerate}
+
+A partir do produto interno, define-se a norma de um vetor $x\in E$ pondo $|x|=\sqrt{\intpr{x,x}}$, ou seja,
+$|x|^2=\intpr{x,x}$. As propriedades $N1$ e $N2$ são imediatas. Quanto a $N3$, ela decorre da 
+\textit{Desigualdade de Cauchy-Schwarz,} $|\intpr{x,y}| \le |x| \cdot |y|$. 
+
+Mas antes, considere os seguintes lemas:\\
+\dotline
+\textbf{Lema 1: (Desigualdade de Young)} Para qualquer $a, b$ não-negativos, e sejam $p$ e $q$ expoentes 
+conjugados, isto é,
+
+\begin{ceqnalign*}
+  \frac{1}{p} + \frac{1}{q} = 1, \quad \text{onde, $p, q > 1$},
+\end{ceqnalign*}
+temos que 
+\begin{ceqnalign*}
+  ab \le \frac{a^p}{p} + \frac{b^q}{q}.
+\end{ceqnalign*}
+\textbf{Dem:} Considere a função $f(x) = x^p$. Note que, como $p > 1$, então $f''(x) = p(p-1)x^{p-2}$. 
+Se $x$ é não-negativo, então $x^{p-2}$ também é não-negativo. Mais ainda, 
+\begin{ceqnalign*}
+  p > 1 \implies (p - 1) > 0 \implies p(p-1)>0,
+\end{ceqnalign*}
+sendo assim, $f''(x) \ge 0$. Deste modo, temos que $f(x)$ é uma função convexa para todo $x$ não-negativo.
+Das propriedades de funções convexas, temos que, para quaisquer $x, a \in \bR_{\ge 0}$,
+\begin{ceqnalign*}
+  f(x) \ge f(a) + f'(a)(x-a).
+\end{ceqnalign*}
+Com isto, seja $a = 1$,
+\begin{ceqnalign*}
+  f(x) \ge f(1) + f'(1)(x-1) = 1^p + p(1)^{p-1}(x-1) = 1 + p(x-1),
+\end{ceqnalign*}
+ou seja,
+\begin{ceqnalign*}
+  x^p \ge 1 + p(x-1), \quad x\in \bR_{\ge 0}, \quad p>1.
+\end{ceqnalign*}
+Visto que, por hipótese, $a$ e $b$ são não-negativos, então $x = ab^{1-q} \ge 0$, deste modo,
+\begin{ceqnalign*}
+  \parth{ab^{1-q}}^p &\ge 1 + p(ab^{1-q}-1), \\
+  \frac{a^pb^{(1-q)p}}{p} &\ge \frac{1}{p} + (ab^{1-q}-1) \implies 
+  \frac{a^pb^{-q}}{p} \ge \frac{1}{p} + (ab^{1-q} - 1),\\
+  \frac{a^p}{p} &\ge b^{q}\parth{\frac{1}{p} - 1} + ab \implies 
+  \frac{a^p}{p} + \frac{b^{q}}{q} \ge ab. 
+\end{ceqnalign*}
+Com isto, temos o que queríamos. $\square$
+\dotline
+
+\end{document}

@@ -14,10 +14,23 @@ onde $n \inN$.
 \end{ceqnalign*}
 onde $C \in \bR_{\ge 0}$. Note que, para $A = \bN_{\le n} \setminus\{j\}$, temos que $
 d_j(x,y)=\sqrt{\sum\limits_{i \in A} |x_i - y_i|} \ge 0$, visto que $d_j$ é na verdade a métrica $d$ aplica
-da a pontos em $\bR^{n-1}$. Deste modo, seja $c = d_j^2(x,y)$. Com isto,
+da a pontos em $\bR^{n-1}$. Com isto, seja $C = d_j^2(x,y)$,
 \begin{ceqnalign*}
-  d''(x,y) = |x_j - y_j| \le \sqrt{(x_j - y_j)^2 + d_j^2(x,y)} = \sqrt{d^2(x,y)} = d(x,y),
+  d''(x,y) = |x_j - y_j| \le \sqrt{(x_j - y_j)^2 + d_j^2(x,y)} = \sqrt{d^2(x,y)} = d(x,y).
 \end{ceqnalign*}
-como queríamos.
+Para a desigualdade (2), considere $(d')^2$ e seja $a_i = |x_i - y_i|$ para $i \inN_{\le n}$, ou seja,
+\begin{ceqnalign*}
+  \parth{d'(x,y)}^2 &= \parth{\sum_{i=1}^{n} |x_i - y_i|}^2 = \sum_{i=1}^n \parth{\sum_{j=1}^n a_i\cdot a_j}
+  = \parth{\sum_{k=1}^{n} a_k^2} + \sum_{i=1}^n \parth{\sum_{\substack{j=1 \\ j\neq i}}^n a_i\cdot a_j} \\
+  &= d^2(x,y) + \sum_{i=1}^n \parth{\sum_{\substack{j=1 \\ j\neq i}}^n a_i\cdot a_j} \ge d^2(x,y), \tag{eq1}
+\end{ceqnalign*}
+visto que $d'$ e $d$ são não-negativos, de (eq1), segue que $d(x,y) \le d'(x,y)$.\\
+Por fim, para a desigualdade (3), note que para todo $k \inN_{\le n}$, $|x_k - y_k| \le 
+\max_{i\inN_{\le n}} |x_i - y_i|$, $(\star)$. Sendo assim, aplicando $n$ vezes a expressão em $(\star)$ e em se
+guida, combinando cada uma delas numa só expressão, segue que,
+\begin{ceqnalign*}
+  d'(x,y) = \sum_{i = 1}^{n} |x_i -y_i| \le n\cdot \max_{i \inN_{\le n}} |x_i - y_i| = d''(x,y),
+\end{ceqnalign*}
+como queríamos. $\square$
 \hlinear
 %</prop1>
