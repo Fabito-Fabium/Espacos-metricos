@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Fedora 39) (preloaded format=pdflatex 2024.5.17)  21 MAR 2025 07:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.3.10)  21 MAR 2025 13:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,14 +73,14 @@ Language: english 2017/06/06 v3.3r English support from the babel system
 Package babel Info: Hyphen rules for 'canadian' set to \l@english
 (babel)             (\language0). Reported on input line 102.
 Package babel Info: Hyphen rules for 'australian' set to \l@ukenglish
-(babel)             (\language66). Reported on input line 105.
+(babel)             (\language72). Reported on input line 105.
 Package babel Info: Hyphen rules for 'newzealand' set to \l@ukenglish
-(babel)             (\language66). Reported on input line 108.
+(babel)             (\language72). Reported on input line 108.
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazilian.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazilian' set to \l@portuguese
-(babel)             (\language20). Reported on input line 111.
+(babel)             (\language9). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/babel/locale/pt/babel-brazilian.tex
@@ -1614,16 +1614,7 @@ t/fonts/enc/dvips/fontawesome5/fa5free1.enc} <./Logos//utfpr.png> <./Logos//cc-
 by.png>]
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
 (Font)              scaled to size 6.6pt on input line 139.
-
-Underfull \hbox (badness 10000) in paragraph at lines 154--158
-
- []
-
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 191--194
-
- []
-
+ [2]
 [3] (./cap01.aux
 Package cleveref Info: loaded `brazilian' language definitions on input line 22
 .
@@ -1640,7 +1631,7 @@ Package logreq Info: Writing requests to 'cap01.run.xml'.
  ) 
 Here is how much of TeX's memory you used:
  38737 strings out of 476034
- 707272 string characters out of 5792854
+ 707262 string characters out of 5792864
  1886388 words of memory out of 6000000
  58512 multiletter control sequences out of 15000+600000
  628565 words of font info for 245 fonts, out of 8000000 for 9000
@@ -1657,7 +1648,7 @@ tx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/newtx/ztmr.pfb>
-Output written on cap01.pdf (3 pages, 266440 bytes).
+Output written on cap01.pdf (3 pages, 266040 bytes).
 PDF statistics:
  118 PDF objects out of 1000 (max. 8388607)
  82 compressed objects within 1 object stream

@@ -151,8 +151,8 @@ A partir do produto interno, define-se a norma de um vetor $x\in E$ pondo $|x|=\
 $|x|^2=\intpr{x,x}$. As propriedades $N1$ e $N2$ são imediatas. Quanto a $N3$, ela decorre da 
 \textit{Desigualdade de Cauchy-Schwarz,} $|\intpr{x,y}| \le |x| \cdot |y|$. 
 
-Mas antes, considere os seguintes lemas:\\
-\dotline
+Mas antes, considere os seguintes lemas:
+\hlinear
 \textbf{Lema 1: (Desigualdade de Young)} Para qualquer $a, b$ não-negativos, e sejam $p$ e $q$ expoentes 
 conjugados, isto é,
 
@@ -163,6 +163,7 @@ temos que
 \begin{ceqnalign*}
   ab \le \frac{a^p}{p} + \frac{b^q}{q}.
 \end{ceqnalign*}
+\dotline
 \textbf{Dem:} Considere a função $f(x) = x^p$. Note que, como $p > 1$, então $f''(x) = p(p-1)x^{p-2}$. 
 Se $x$ é não-negativo, então $x^{p-2}$ também é não-negativo. Mais ainda, 
 \begin{ceqnalign*}
@@ -190,6 +191,12 @@ Visto que, por hipótese, $a$ e $b$ são não-negativos, então $x = ab^{1-q} \g
   \frac{a^p}{p} + \frac{b^{q}}{q} \ge ab. 
 \end{ceqnalign*}
 Com isto, temos o que queríamos. $\square$
-\dotline
+\hlinear
+\textbf{Lema 2: } Sejam $p$ e $q$ expoentes conjugados e considere duas sequências $(x_i)_{i \inN_{\le n}}$ e $(y_i)_{i \inN_{\le n}}$,
+tais que,
+
+\begin{ceqnalign*}
+  \sum_{i = 1}^n |x_i| = 1, \quad\quad  \sum_{i = 1}^n |y_i| = 1.
+\end{ceqnalign*}
 
 \end{document}
